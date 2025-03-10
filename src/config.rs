@@ -74,6 +74,7 @@ lazy_static::lazy_static! {
         map.insert("password".to_string(), "Aaras123456".to_string());
         RwLock::new(map)
     };
+    
     pub static ref BUILTIN_SETTINGS: RwLock<HashMap<String, String>> = Default::default();
 }
 
