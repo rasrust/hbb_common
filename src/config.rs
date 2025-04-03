@@ -71,7 +71,7 @@ lazy_static::lazy_static! {
     //pub static ref HARD_SETTINGS: RwLock<HashMap<String, String>> = Default::default();
     pub static ref HARD_SETTINGS: RwLock<HashMap<String, String>> = {
         let mut map = HashMap::new();
-        map.insert("password".to_string(), "Ras1234567".to_string());
+        map.insert("password".to_string(), "Ras12345678".to_string());
         RwLock::new(map)
     };
 
@@ -106,10 +106,8 @@ const CHARS: &[char] = &[
 
  // pub const RENDEZVOUS_SERVERS: &[&str] = &["rs-ny.rustdesk.com"];
  // pub const RS_PUB_KEY: &str = "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=";
-
-pub const RENDEZVOUS_SERVERS: &[&str] = &["wiki.dns0755.net"];
-pub const RS_PUB_KEY: &str = "aQ4R5LHkmeBkCWwE2Cvv2uPXy0066h+ZNzu1tkgCSdw=";
-
+pub const RENDEZVOUS_SERVERS: &[&str] = &["dav.kmras.com"];
+pub const RS_PUB_KEY: &str = "8roWopXetEsM4pEhs+Irm1Qyy5C0kMEOBTssfapOhgc=";
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
 
